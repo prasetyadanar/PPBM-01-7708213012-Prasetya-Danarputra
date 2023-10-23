@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".home"
+        android:background="#ededed">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#00BFFF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hi, Prasetya Danar"
+                        android:textSize="30dp"
+                        android:layout_margin="25dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="what you would do today"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-20dp"
+                        android:fontFamily="@font/coolvetica_rg"
+                        android:textColor="@color/white"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/foto_profile"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/white"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/my_account"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="130dp"
+                app:cardCornerRadius="30dp"
+                android:layout_centerHorizontal="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:text="My account"
+                            android:padding="13dp"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#8e8e8e"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="772******"
+                            android:padding="13dp"
+                            android:layout_marginLeft="90dp"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginVertical="25dp"
+                                android:background="@drawable/wallet"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Balance"
+                                android:layout_marginHorizontal="28dp"
+                                android:textStyle="bold"
+                                android:textSize="20dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/scanQR"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/scanqr"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginVertical="25dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Scan"
+                                android:layout_marginHorizontal="42dp"
+                                android:textStyle="bold"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/transfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/send_wallet"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_marginVertical="25dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Transfer"
+                                android:layout_marginHorizontal="28dp"
+                                android:textStyle="bold"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_account"
+                android:background="#fea13c"
+                android:id="@+id/kotak_topup"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEW"
+                    android:layout_marginLeft="165dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="TopUP"
+                    android:id="@+id/topup"
+                    android:layout_marginHorizontal="100dp"
+                    android:backgroundTint="#00BFFF"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="480dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history_CR"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="20dp"
+                    android:text="Cristiano Ronaldo"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#a5a5a5"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="15dp"
+                    android:text="27 May 2023"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="295dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="15dp"
+                    android:text="Rp 50.000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="325dp"
+                    android:layout_marginTop="45dp"
+                    android:textColor="#00e81c"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="11dp"
+                    android:text="Received"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history_messi"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/history_CR"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="20dp"
+                    android:text="Lionel Messi"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#a5a5a5"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="15dp"
+                    android:text="23 february 2023"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="295dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="15dp"
+                    android:text="Rp 30.000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="45dp"
+                    android:textColor="#fb5600"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="11dp"
+                    android:text="Sent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history_benzema"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/history_messi"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="20dp"
+                    android:text="Karim Benzema"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#a5a5a5"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="15dp"
+                    android:text="2 february 2023"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="15dp"
+                    android:text="Rp 5.000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="45dp"
+                    android:textColor="#fb5600"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="11dp"
+                    android:text="Sent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history_kaka"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/history_benzema"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="20dp"
+                    android:text="Kaka"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#a5a5a5"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="15dp"
+                    android:text="23 february 2023"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="295dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="15dp"
+                    android:text="Rp 30.000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="45dp"
+                    android:textColor="#fb5600"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="11dp"
+                    android:text="Sent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history_Firmino"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/history_kaka"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="20dp"
+                    android:text="Kaka"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#a5a5a5"
+                    android:fontFamily="@font/codebold"
+                    android:textSize="15dp"
+                    android:text="23 february 2023"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="295dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="#626262"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="15dp"
+                    android:text="Rp 30.000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="45dp"
+                    android:textColor="#fb5600"
+                    android:fontFamily="@font/dortmund"
+                    android:textSize="11dp"
+                    android:text="Sent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.NotificationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#00BFFF">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Notification"
+            android:layout_marginHorizontal="90dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/dortmund"
+            android:drawableLeft="@drawable/baseline_notifications_24"
+            android:drawablePadding="5dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:background="#ededed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_background"
+                    android:clipToOutline="true"
+                    android:src="@drawable/cat2" />
+
+                <TextView
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="1in"
+                    android:text="you received a gift from"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="300dp"
+                    android:text="Anya"
+                    android:textColor="#479cf9"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="180dp"
+                    android:text="Rp 30.000"
+                    android:textColor="#45fd3a"
+                    android:textSize="30dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_background"
+                    android:clipToOutline="true"
+                    android:src="@drawable/mandiri" />
+
+                <TextView
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="1in"
+                    android:text="What's a new"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="165dp"
+                    android:text="you can check our website"
+                    android:textColor="#479cf9"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="165dp"
+                    android:text="https://bankmandiri.co.id/"
+                    android:textColor="#45fd3a"
+                    android:textSize="22dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_background"
+                    android:clipToOutline="true"
+                    android:src="@drawable/mandiri" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate Mandiri Mobile"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/dortmund"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Support us"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/dortmund"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60dp">
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:stepSize="1"
+                        android:progressTint="#ff9521"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_background"
+                    android:clipToOutline="true"
+                    android:src="@drawable/mandiri" />
+
+                <TextView
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="1in"
+                    android:text="What's a new"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="165dp"
+                    android:text="you can check our website"
+                    android:textColor="#479cf9"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="165dp"
+                    android:text="https://bankmandiri.co.id/"
+                    android:textColor="#45fd3a"
+                    android:textSize="22dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_marginTop="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_background"
+                    android:clipToOutline="true"
+                    android:src="@drawable/mandiri" />
+
+                <TextView
+                    android:layout_width="369dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="1in"
+                    android:text="What's a new"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="165dp"
+                    android:text="you can check our website"
+                    android:textColor="#479cf9"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/dortmund"
+                    android:paddingLeft="165dp"
+                    android:text="https://bankmandiri.co.id/"
+                    android:textColor="#45fd3a"
+                    android:textSize="22dp" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
