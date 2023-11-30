@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ProfileFragment">
 
-    <RelativeLayout android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:card.view="http://schemas.android.com/tools"
         android:layout_centerInParent="true"
-        android:gravity="center"
-        android:background="#ADD8E6">
+        android:background="#ADD8E6"
+        android:gravity="center">
 
         <RelativeLayout
+            android:id="@+id/atas"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="50dp"
-            android:id="@+id/atas"
             android:background="@drawable/bckgrnd">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
+                app:cardBackgroundColor="#ADD8E6"
                 app:cardCornerRadius="40dp"
                 app:cardElevation="15dp"
-                app:cardBackgroundColor="#ADD8E6"
                 app:cardUseCompatPadding="true"
-                card.view:cardCornerRadius="5dp">
+                tools:cardCornerRadius="5dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -52,10 +52,10 @@
             android:layout_marginTop="60dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
-            app:civ_border_width="2dp"
-            app:civ_border_color="@color/white"
             android:scaleType="centerCrop"
-            android:src="@drawable/foto_profile" />
+            android:src="@drawable/foto_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
 
 
         <TextView
@@ -71,59 +71,68 @@
 
         <TextView
             android:id="@+id/emailaja"
-            android:layout_below="@id/yourname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/yourname"
             android:layout_centerHorizontal="true"
-            android:textSize="15dp"
-            android:padding="10dp"
             android:background="#50ffffff"
-            android:text="prasetyadanar21@gmail.com"/>
+            android:padding="10dp"
+            android:text="prasetyadanar21@gmail.com"
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/no_kartu"
-            android:layout_below="@id/emailaja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Card Number"
-            android:layout_marginTop="20dp"
+            android:layout_below="@id/emailaja"
             android:layout_centerHorizontal="true"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
+            android:layout_marginTop="20dp"
+            android:text="Card Number"
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/no_kartu_aja"
-            android:layout_below="@id/no_kartu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/no_kartu"
             android:layout_centerHorizontal="true"
-            android:textSize="15dp"
-            android:padding="10dp"
             android:background="#50ffffff"
-            android:text="7708213012"/>
+            android:padding="10dp"
+            android:text="7708213012"
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/alamat"
-            android:layout_below="@id/no_kartu_aja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Youre Address"
-            android:layout_marginTop="20dp"
+            android:layout_below="@id/no_kartu_aja"
             android:layout_centerHorizontal="true"
-            android:textStyle="bold"
-            android:textSize="15dp"/>
+            android:layout_marginTop="20dp"
+            android:text="Youre Address"
+            android:textSize="15dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/alamat_aja"
-            android:layout_below="@id/alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/alamat"
             android:layout_centerHorizontal="true"
-            android:textSize="15dp"
-            android:padding="10dp"
             android:background="#50ffffff"
-            android:text="45-01"/>
+            android:padding="10dp"
+            android:text="45-01"
+            android:textSize="15dp" />
 
+        <TextView
+            android:id="@+id/customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat_aja"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="274dp"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:text="Customer Servive" />
 
 
     </RelativeLayout>

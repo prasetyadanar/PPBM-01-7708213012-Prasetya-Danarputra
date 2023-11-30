@@ -1,0 +1,71 @@
+<!-- res/layout/item_contact.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contact_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kaia"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaia Helga"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/contact_image"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review this place"
+            android:textSize="14sp"
+            android:layout_below="@+id/contact_name"
+            android:layout_toEndOf="@+id/contact_image"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+
+            android:backgroundTint="#F1F1F1"
+            android:layout_below="@id/contact_phone"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/place_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teh Poci Akang"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:fontFamily="@font/dortmund"/>
+
+            <!-- Tambahkan RatingBar di bawah tulisan "Teh Poci Akang" -->
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact_phone"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:numStars="5"
+                android:rating="5.0"
+                android:progressTint="#FFD700"
+                android:isIndicator="true"
+                />
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>

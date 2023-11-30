@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoImageView"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/kaia"/>
+
+
+
+    <TextView
+        android:id="@+id/namaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotoImageView"
+        android:layout_marginTop="20dp"
+        android:text="Kaia Helga"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/negaraLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namaTextView"
+        android:layout_marginTop="50dp"
+        android:text="Country :"
+        android:textSize="15dp"
+        android:layout_marginStart="115dp"/>
+
+    <TextView
+        android:id="@+id/negaraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/negaraLabelTextView"
+        android:layout_marginTop="0dp"
+        android:text="Indonesia"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/negaraTextView"
+        android:background="#80000000"/>
+
+    <TextView
+        android:id="@+id/noTelpLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/negaraTextView"
+        android:layout_marginTop="8dp"
+        android:text="Rekening:"
+        android:textSize="15dp"
+        android:layout_marginStart="115dp"/>
+
+    <TextView
+        android:id="@+id/noTelpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noTelpLabelTextView"
+        android:layout_marginTop="8dp"
+        android:text="+628123456789"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/noTelpTextView"
+        android:background="#80000000"/>
+
+</RelativeLayout>

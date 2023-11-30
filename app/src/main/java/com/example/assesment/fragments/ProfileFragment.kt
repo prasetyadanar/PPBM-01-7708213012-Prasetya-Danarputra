@@ -1,10 +1,15 @@
 package com.example.assesment.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.TextView
+import com.example.assesment.ContohLIstView
+import com.example.assesment.ListViewAja
 import com.example.assesment.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -22,20 +27,26 @@ class ProfileFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+
+        // Mendapatkan referensi ke TextView dengan ID "customer"
+        val customerServiceTextView = view.findViewById<TextView>(R.id.customer)
+
+        // Menambahkan event listener untuk menangani klik pada TextView
+        customerServiceTextView.setOnClickListener {
+            // Membuat Intent untuk memulai aktivitas ContohListView
+            val intent = Intent(activity, ListViewAja::class.java)
+
+            // Menjalankan aktivitas ContohListView
+            startActivity(intent)
+        }
+
+        return view
     }
 
     companion object {

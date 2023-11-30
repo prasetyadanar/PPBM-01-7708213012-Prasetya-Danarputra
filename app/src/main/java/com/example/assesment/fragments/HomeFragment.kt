@@ -45,6 +45,8 @@ class HomeFragment : Fragment() {
         val linearLayout1 = view.findViewById<LinearLayout>(R.id.transfer)
         val linearLayout2 = view.findViewById<LinearLayout>(R.id.balance)
         val scanQRLayout = view.findViewById<LinearLayout>(R.id.scanQR)
+        val feedbutton = view.findViewById<Button>(R.id.feed)
+
 
         // Tambahkan OnClickListener untuk LinearLayout
         linearLayout1.setOnClickListener {
@@ -77,14 +79,22 @@ class HomeFragment : Fragment() {
         scanQRLayout.setOnClickListener {
             // Tindakan yang akan dilakukan saat LinearLayout "Scan QR" ditekan
             // Misalnya, tampilkan pesan "Coming Soon" menggunakan Toast
-            Toast.makeText(context, "Coming Soon", Toast.LENGTH_SHORT).show()
+            val intent = Intent(context, com.example.assesment.ContohLIstView::class.java)
+            startActivity(intent)
+        }
+
+        feedbutton.setOnClickListener {
+            // Tindakan yang akan dilakukan saat LinearLayout "Scan QR" ditekan
+            // Misalnya, tampilkan pesan "Coming Soon" menggunakan Toast
+            val intent = Intent(context, com.example.assesment.ContohLIstView::class.java)
+            startActivity(intent)
         }
 
 
         // ... (Tambahkan kode lain jika diperlukan)
 
         return view
-    }
+        }
 
 
 
