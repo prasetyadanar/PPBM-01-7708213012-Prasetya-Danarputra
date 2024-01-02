@@ -62,6 +62,17 @@
                     android:fontFamily="@font/dortmund"
                     android:textSize="30dp"
                     android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_history"
+                    android:layout_marginStart="100dp"
+                    android:layout_width="200dp"
+                    android:layout_height="90dp"
+                    android:backgroundTint="#00BFFF"
+                    android:text="HISTORY"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FirstFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:background="#ededed">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history_1"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#7a7a7a"
+                    android:textSize="20dp"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/history_CR"
+                    android:layout_width="390dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Satria mahatir"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="285dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 500.000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/history_messi"
+                    android:layout_width="390dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@id/history_CR"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="130dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Ansellma"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="295dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 30.000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/history_benzema"
+                    android:layout_width="390dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="225dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Anya geraldine"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 5.000"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/history_2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/history_1"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yesterday"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#7a7a7a"
+                    android:textSize="20dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Kaia helga"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 8.000"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/history_3"
+                android:layout_below="@id/history_2"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 October 2023, Wednesday"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#7a7a7a"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Not Rissa"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 8.000"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/history_4"
+                android:layout_below="@id/history_3"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 October 2023, Wednesday"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#7a7a7a"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Not Rissa"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 8.000"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/history_4"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#7a7a7a"
+                    android:textSize="20dp"/>
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="390dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Gigi Hadid"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="285dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 900.000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="390dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@id/history_CR"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="130dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"
+                        android:contentDescription="@string/todo" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Justin"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="295dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 30.000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="390dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="225dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="35dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/codebold"
+                        android:textSize="20dp"
+                        android:text="Sumanto"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#626262"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="15dp"
+                        android:text="Rp 5.000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="45dp"
+                        android:textColor="#00e81c"
+                        android:fontFamily="@font/dortmund"
+                        android:textSize="11dp"
+                        android:text="Received"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

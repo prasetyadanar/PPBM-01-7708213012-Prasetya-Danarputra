@@ -13,7 +13,7 @@ class splashscreen : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this@splashscreen, login::class.java)
+            val intent = Intent(this@splashscreen, slide_button::class.java)
             startActivity(intent)
             finish()
         },3000)

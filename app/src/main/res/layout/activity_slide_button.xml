@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slide_button"
+    android:background="@drawable/bckgrnd">
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slide1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="UNLOCK"
+        app:area_margin="4dp"
+        app:outer_color="#00BFFF"
+        android:layout_centerInParent="true"
+        app:bounce_on_start="true"/>
+    
+</RelativeLayout>
